@@ -9,6 +9,7 @@ public class LaunchBrowser {
 	{
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://demo.actitime.com/login.do");
+		driver.manage().timeouts().implicitlywait(Duration.ofsec(5));
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
 		driver.quit();

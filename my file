@@ -13,6 +13,7 @@ public class LaunchBrowser {
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
                 driver.manage().window().minimize();
+                hello
 		driver.quit();
 	}
 
